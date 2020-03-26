@@ -5,9 +5,21 @@ html {
   height: 100%;
 }
 .logo {
-  background-image: url("img/good-neighbor.png");
+  background-image: url("../img/good-neighbor.png");
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.email {
+  background-color: white;
+}
+
+.password {
+  background-color: white;
+}
+
+.login-button {
+  background-color: white;
 }
