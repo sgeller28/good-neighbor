@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import '../styles/login.scss';
+import '../styles/newPost.scss';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import NewPost from '../containers/newPost';
 import Login from '../containers/login';
