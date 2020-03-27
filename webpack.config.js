@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable operator-linebreak */
 /* eslint-disable indent */
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -6,7 +8,8 @@ const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
 
 // eslint-disable-next-line no-multi-spaces
-const finalCSSLoader =  env === 'production'
+const finalCSSLoader =
+  env === 'production'
     ? MiniCssExtractPlugin.loader
     : { loader: 'style-loader' };
 
@@ -14,6 +17,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   mode: env,
+  output: { publicPath: '/' },
   entry: ['babel-polyfill', './src'], // this is where our app lives
   devtool: 'source-map', // this enables debugging with source in chrome devtools
   module: {
@@ -21,7 +25,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [{ loader: 'babel-loader' }, { loader: 'eslint-loader' }],
+        use: [{ loader: 'babel-loader' }, { loader: 'eslint-loader' }]
       },
       {
         test: /\.s?css/,
@@ -30,23 +34,23 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             loader: 'postcss-loader',
             options: {
               plugins: () => [autoprefixer()],
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
-            },
-          },
-        ],
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
@@ -55,21 +59,26 @@ module.exports = {
             loader: 'file-loader',
             options: {
               useRelativePath: true,
-              name: '[name].[ext]',
-            },
-          },
-        ],
-      },
-    ],
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      }
+    ]
+  },
+  devServer: {
+    hot: true,
+    historyApiFallback: true
   },
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
-  ],
-  devServer: {
-    hot: true,
-  },
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: './200.html'
+    })
+  ]
 };

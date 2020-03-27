@@ -1,25 +1,59 @@
 body,
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Zilla Slab', serif;
   background: #f47f65;
   height: 100%;
-}
-.logo {
-  background-image: url("../img/good-neighbor.png");
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.email {
-  background-color: white;
+  color: white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.17);
 }
 
-.password {
-  background-color: white;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  font-family: Suez One;
+  font-size: 140px;
+  line-height: 157px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.17);
 }
 
-.login-button {
+#email {
   background-color: white;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  box-sizing: border-box;
+}
+
+#password {
+  background-color: white;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  box-sizing: border-box;
+}
+
+#login-button {
+  background-color: white;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 16px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
