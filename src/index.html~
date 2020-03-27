@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Good Neighbor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Suez+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="logo">Good Neighbor</div>
+    <div id="main">Loading...</div>
+    <input id="email" />
+    <input id="password" />
+    <button id="login-button">Log In</button>
+  </body>
+</html>
