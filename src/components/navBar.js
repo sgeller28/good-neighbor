@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import '../styles/style.scss';
+import '../styles/navBar.scss';
 import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
