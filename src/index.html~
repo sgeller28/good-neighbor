@@ -12,10 +12,8 @@
   <body>
     <div id="logo">Good Neighbor</div>
     <div id="main">Loading...</div>
-    <form action = " ">
-      <input type="email" id="email" placeholder="Email" />
-      <input type="password" id="password" placeholder="Password"/>
-      <button id="login-button">Log In</button>
-    </form>
+    <input id="email" />
+    <input id="password" />
+    <button id="login-button">Log In</button>
   </body>
 </html>

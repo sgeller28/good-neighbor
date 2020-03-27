@@ -28,26 +28,14 @@ body {
   text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.17);
 }
 
-#email {;
- background-color: white;
- width: 60%;
- padding: 12px 20px;
- margin: 16px 0;
- box-sizing: border-box;
+.email {
+  background-color: white;
 }
 
-#password {
- background-color: white; 
-width: 60%;
- padding: 12px 20px;
- margin: 16px 0;
- box-sizing: border-box;
+.password {
+  background-color: white;
 }
 
-#login-button {
- background-color: white;
- width: 20%;
- padding: 12px 20px;
- margin: 16px 0;
+.login-button {
+  background-color: white;
 }
-
