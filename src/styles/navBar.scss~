@@ -3,12 +3,11 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: white;
-  font-size: 20pt;
+  font-size: 40pt;
   height: auto;
   width: auto;
   text-align: center;
   font-weight: bold;
-  margin-top: 0px;
   margin-bottom: 20px;
   border-color: black;
   border-style: solid;

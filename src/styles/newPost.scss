@@ -1,3 +1,25 @@
 #newPostDiv {
+  font-family: 'Zilla Slab', serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
   color: black;
+  background-color: white;
+  input[type='text']{
+	width: 60%;
+  	padding: 12px 20px;
+  	margin: 1px 0;
+  	box-sizing: border-box;
+  	text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.17);
+  }
+  input[type='button']{
+	background-color: white;
+  	width: 15%;
+  	padding: 12px 20px;
+  	margin: 5px 0px;
+  }
+  h1{
+	font-family: Suez One;
+  	text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.17);
+  }
 }

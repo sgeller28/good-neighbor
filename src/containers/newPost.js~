@@ -29,12 +29,13 @@ class NewPost extends Component {
     this.setState({ anythingelse: event.target.value });
   }
 
+ 
   onSubmitClick() {
     // eslint-disable-next-line no-unused-vars
     const post = {
       store: this.state.store,
       grocerylist: this.state.grocerylist,
-      anythingelse: this.state.anythingelse,
+      anythingelse: this.state.anythingelse
     };
   }
 
@@ -59,7 +60,7 @@ class NewPost extends Component {
             onChange={this.onGrocerylistChange}
           />{' '}
           <br />
-          Anything else your Good Neighbor should know?{' '}
+          Anything Else?{' '}
           <input
             type="text"
             name="anythingelse"
