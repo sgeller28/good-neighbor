@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Login extends Component {
   constructor(props) {
     super();
   }
@@ -24,4 +24,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Login;
