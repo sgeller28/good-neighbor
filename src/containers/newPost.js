@@ -36,6 +36,7 @@ class NewPost extends Component {
       grocerylist: this.state.grocerylist,
       anythingelse: this.state.anythingelse,
     };
+    // createPost(post, this.props.history);
   }
 
   render() {
